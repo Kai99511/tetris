@@ -239,7 +239,7 @@ function drawInfo() {
         con.strokeText(s, OFFSET_X + x, y);
         con.fillStyle = 'White';
         con.fillText(s, OFFSET_X + x, y);
-        finish();
+        restart();
     }
 }
 
@@ -351,7 +351,7 @@ function restartGame() {
     init();
 }
 
-function finish() {
+function restart() {
     startbutton = document.createElement('button');
     startbutton.textContent = 'リスタート';
     startbutton.addEventListener('click', restartGame);
