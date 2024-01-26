@@ -1,0 +1,132 @@
+#title-screen {
+    text-align: center;
+    /*テキストを中央揃え*/
+    margin-top: 0px;
+    font-size: 60px;
+    /*フォントサイズを40ピクセル*/
+    position: relative;
+    /*相対位置指定*/
+    text-align: center;
+    /**/
+    top: 150px;
+    /*上から150ピクセルの位置に移動*/
+
+}
+
+.char1 {
+    color: red;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    /* 水平方向、垂直方向、ぼかし、影の色 */
+}
+
+.char2 {
+    color: green;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.char3 {
+    color: orange;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.char4 {
+    color: purple;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.char5 {
+    color: skyblue;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.char6 {
+    color: yellow;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#can {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(#13c0d3, #07324d);
+    font-family: "Poppins", sans-serif;
+}
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*rem算出をしやすくするために*/
+}
+
+button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.btn,
+button.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+button.btn--red.btn--border-outset {
+    border: 6px outset #eea600;
+    background-color: #d69600;
+    /* 任意の灰色に変更 */
+}
+
+#restartButton {
+    color: #fff;
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+    right: 0px;
+}
+
+#titleButton {
+    color: #fff;
+    display: none;
+    position: relative;
+    font-weight: bold;
+    font-size: 24px;
+    bottom: 35px;
+    left: 475px;
+}

@@ -5,13 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>テトリス</title>
-  
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <canvas id = 'can'></canvas>
+  <div id="title-screen">
+    <h1>
+      <span class="char1">T</span>
+      <span class="char2">E</span>
+      <span class="char3">T</span>
+      <span class="char4">R</span>
+      <span class="char5">I</span>
+      <span class="char6">S</span>
+    </h1>
+    <h2></h2>
+    <button href="" class="btn btn--red btn--border-outset" onclick="startGame()">START</button>
+  </div>
+  <canvas id='can'></canvas>
   <div id='container'></div>
-<script src= './tetris.js'></script>
+  <button id="restartButton" >リスタート</button>
+  <button id="titleButton" >タイトルに戻る</button>
+  <script src='./tetris.js'></script>
 </body>
 
 </html>
