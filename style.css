@@ -107,6 +107,6 @@ button.btn--red.btn--border-outset {
     top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1320px; /* 幅を指定 */
-    height: 300px; /* 高さを指定 */
+    width: 880px; /* 幅を指定 */
+    height: 200px; /* 高さを指定 */
 }
