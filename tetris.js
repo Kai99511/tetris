@@ -80,7 +80,7 @@ const TETRO_TYPES =
 //画像と効果音
 let BGimg;
 BGimg = new Image();
-BGimg.src = "./images/BG.jpg";
+BGimg.src = "./images/BG2.png";
 
 let Blimg;
 Blimg = new Image();
