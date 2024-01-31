@@ -383,16 +383,7 @@ function startGame() {
         over = false;
         lines = 0;
         score = 0;
-        for (let y = 0; y < FIELD_ROW; y++) {
-            field[y] = [];
-            for (let x = 0; x < FIELD_COL; x++) {
-                field[y][x] = 0;
-            }
-        }
-        setTetro();
-        drawAll();
-        clearInterval(gameInterval);
-        gameInterval = setInterval(dropTetoro, GAMESPEED);
+        init();
     }
 
     function title() {
@@ -401,6 +392,7 @@ function startGame() {
         over = false;
         lines = 0;
         score = 0;
+        init();
         document.getElementById('title-screen').style.display = 'block';
         can.style.display = 'none';
         container.style.display = 'none';
